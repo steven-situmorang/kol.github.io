@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    
+/* assign animation "move" to ball element 
+1. try altering the duration; 2s is two seconds
+2. try altering the "ease-in-out" to "ease", "ease-out", "linear"
+3. try altering the "infinite" to "1", "2", and so on
+*/
+.ball {
+  animation: 2s move infinite ease-in-out;
+}
+
+
+
+
+
+@keyframes move {
+  0% {
+      left: 5%;
+  }
+  50% {
+      left: 85%;
+  }
+  100% {
+      left: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* base styles */
+
+body {
+  text-align: center;
+  background: #fafafa;
+  position: relative;
+}
+
+.ball {
+  width: 10%;
+  padding-bottom: 10%;
+  border-radius: 50%;
+  background: #2098d1;
+  box-shadow: -3px 5px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  }  
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
